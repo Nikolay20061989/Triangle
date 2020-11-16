@@ -6,7 +6,6 @@ public class Triangle {
     public double side3;
 
 
-
     public Triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
@@ -16,10 +15,12 @@ public class Triangle {
 
     public double geroneSquare() {
         double p = (side1 + side2 + side3) / 2;
-        double a=Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
-        return  a;
+        double a = Math.sqrt(p * (p - side1) * (p - side2) * (p - side3));
+        return a;
     }
-public Triangle(){}
+
+    public Triangle() {
+    }
 
     public double getSide1() {
         return side1;
